@@ -1,0 +1,55 @@
+/* colores y fuentes a usar */
+:root {
+    --azul-10: #EAF2FD;
+    --azul-100: #2A7AE4;
+    --preto-100: #464646;
+    --preto-30: #C8C8C8;
+    --preto-50: #A2A2A2;
+    --preto-branco: #FFFFFF;
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+
+    --rwFont: "Raleway", sans-serif;
+  }  
+
+body {
+    font-family: var(--rwFont);
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.container{
+    padding: 1.3rem;
+    box-sizing: border-box;
+}
+
+.titulo{
+    color: var(--preto-100, #464646);
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+.descripcion{
+    color: var(--preto-100, #464646);
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: justify;
+}
+@media screen and (min-width:1024px){
+    .descripcion{
+        font-size: 1.1rem;
+    }
+    .titulo{
+        font-size: 2rem;
+    }
+}

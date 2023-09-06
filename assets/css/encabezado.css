@@ -1,0 +1,31 @@
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    display: flex;
+    height: 4.5rem;
+    align-self: stretch;
+}
+.link_logo{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.encabezado .logo{
+    width: 6.25rem;
+}
+.encabezado .iconoNombre{
+    width: 4.5rem;
+    height: 0.75rem;
+}
+.encabezado .iconoLogo{
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.busqueda{
+    width: 1.5rem;
+    height: 1.5rem;
+}

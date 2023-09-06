@@ -1,0 +1,30 @@
+.rodapie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rodapie .logo{
+    width: 11rem;
+}
+.rodapie .iconoNombre{
+    width: 7.875em;
+    height: 1.19rem;
+}
+.rodapie .iconoLogo{
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.rodapie .menu, .rodapie .menu ul{
+    text-align: center;
+    margin: 0;
+}
+.menu_link a{
+    color: var(--preto-100, #464646);
+}
+.menu_link{
+    padding: 0.5rem 0;
+}
+.menu{
+    padding: 0.5rem 0;
+}
