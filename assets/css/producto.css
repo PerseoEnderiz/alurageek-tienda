@@ -1,0 +1,28 @@
+
+.tarjetaProducto{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 9.75rem;
+    height: 15.6rem;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+.producto_precio{
+    font-size: 1rem;
+}
+
+.producto_img {
+    background: url("/assets/img/nintendo.jpeg") 50% 50% / cover no-repeat, lightgray 50%;
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+}
+.producto_texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%
+}
+  

@@ -1,7 +1,16 @@
+@import url(contacto.css);
 .rodapie{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: var(--azul-10);
+}
+.rodapie_contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
 }
 .rodapie .logo{
     width: 11rem;
@@ -18,13 +27,39 @@
 .rodapie .menu, .rodapie .menu ul{
     text-align: center;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
 }
 .menu_link a{
     color: var(--preto-100, #464646);
+    font-size: 1rem;
 }
-.menu_link{
-    padding: 0.5rem 0;
-}
-.menu{
-    padding: 0.5rem 0;
+@media screen and (min-width:1024px){
+    .rodapie{
+        padding: 4rem;
+    }
+    .rodapie_contenido{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        align-items: flex-start;
+        /* gap: 7rem; */
+    }
+    .menu{
+        width: 11rem;
+    }
+    .menu_list-nav{
+        gap: 1.5rem;
+    }
+    .rodapie .menu, .rodapie .menu ul{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 11rem;
+        gap: 1.5rem;
+    }
 }

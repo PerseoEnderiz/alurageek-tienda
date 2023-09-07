@@ -1,7 +1,7 @@
 @import url(encabezado.css);
 @import url(banner.css);
+@import url(categoria.css);
 @import url(rodapie.css);
-@import url(contacto.css);
 .footer {
     color: var(--preto-100);
     text-align: center;
@@ -13,7 +13,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
     padding: 0.75rem 1rem;
     font-family: var(--rwFont);
     font-weight: 600;
@@ -32,6 +31,14 @@
     background-color: var(--azul-100);
     color: var(--preto-branco);
 }
+.btn_linea{
+    background: none;
+    font-size: 0.875rem;
+    border: none;
+    color: var(--azul-100);
+    font-weight: 700;
+    padding: 0;
+}
 .icon {
     cursor: pointer;
 
@@ -39,4 +46,9 @@
   
 .icon:hover {
     color: rgba(62, 161, 219, 1);
+}
+@media screen and (min-width:1024px){
+    .btn{
+        font-size: 1rem;
+    }
 }

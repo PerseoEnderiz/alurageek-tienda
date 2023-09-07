@@ -14,6 +14,21 @@
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
-    max-height: 6.125rem;
+    max-height: 6.3rem;
 }
-  
+.banner_titulo1{
+  color: var(--preto-branco);
+}
+.banner_descripcion{
+  color: var(--preto-branco);
+}
+@media screen and (min-width:1024px){
+  .banner{
+    height: 22rem;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .banner_texto{
+    width: 75%;  
+  }
+}

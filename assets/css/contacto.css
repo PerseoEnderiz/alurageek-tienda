@@ -4,9 +4,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.5rem0;
+    width: 100%;
 }
-.contacto_descripcion{
+.contacto_titulo{
     font-size: 1rem;
 }
 .contacto_form{
@@ -14,11 +14,10 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 1rem 0 0 0;
 }
 .Formulario{
-    width: 90%;
     padding: 1rem 0 0 0;
+    width: 100%;
 }
 
 .campo_texto{
@@ -106,13 +105,18 @@
 
 @media screen and (min-width:1024px){
     .contacto{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        width: 35rem;
     }
     .contacto_form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 35rem
+    }
+    .Formulario{
+        width: 100%;
+    }
+    .contacto_titulo{
+        font-size: 1rem;
+    }
+    .inp_textarea{
+        height: 4.125rem;
     }
 }

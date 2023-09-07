@@ -1,11 +1,19 @@
 .encabezado{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem;
-    display: flex;
     height: 4.5rem;
     align-self: stretch;
+}
+.encabezado_contenido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.5rem;
 }
 .link_logo{
     display: flex;
@@ -28,4 +36,10 @@
 .busqueda{
     width: 1.5rem;
     height: 1.5rem;
+}
+@media screen and (min-width:1024px){
+    .encabezado_contenido{
+        width: 75%;
+        height: 4.5rem;
+    }
 }
