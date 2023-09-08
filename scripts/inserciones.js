@@ -13,7 +13,7 @@ const imagenLogo = /*html*/`
                 </clipPath>
                 </defs>
             </svg>
-            <img src="/assets/img/logoNombre.svg" alt="Logo AluraGeek" class="iconoNombre">
+            <img src="../assets/img/logoNombre.svg" alt="Logo AluraGeek" class="iconoNombre">
         </a>
     </div>
 `;
