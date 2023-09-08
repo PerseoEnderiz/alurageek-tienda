@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../assets/css/normalize.css">
         <link rel="stylesheet" href="../assets/css/bases.css">
         <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/nuevo_producto.css"
     
     <!-- Importacion fuentes -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,8 +20,48 @@
   <body>
     <header class="encabezado container"></header>
 
-    <section class="rodapie container">
+    <section class="nuevo_producto container">
+      <div class="formulario">
+        <div class="formulario_contenido">
+            <h2 class="formulario_titulo titulo">Agregar nuevo producto</h2>
+            <form action="enviar.php" method="post">
+                <div class="campo_texto">
+                    <input type="url" id="url_img" name="url_img" required class="inp">
+                    <label for="url_img" class="lbl"><span class="text-nomb">URL de la imagen</span></label>
+                    <span class="inp-msg-error">Este campo es requerido</span>
+                </div>
+                <br>
+                <div class="campo_texto">
+                    <input type="text" id="categoria" name="categoria" required class="inp">
+                    <label for="categoria" class="lbl"><span class="text-nomb">Categoría</span></label>
+                    <span class="inp-msg-error">Este campo es requerido</span>
+                </div>
+                <br>
+                <div class="campo_texto">
+                  <input type="text" id="nombre_producto" name="nombre_producto" required class="inp">
+                  <label for="nombre_producto" class="lbl"><span class="text-nomb">Nombre del producto</span></label>
+                  <span class="inp-msg-error">Este campo es requerido</span>
+                </div>
+                <br>
+                <div class="campo_texto">
+                  <input type="number" id="precio_producto" name="precio_producto" required class="inp">
+                  <label for="precio_producto" class="lbl"><span class="text-nomb">Precio del producto</span></label>
+                  <span class="inp-msg-error">Este campo es requerido</span>
+                </div>
+                <br>
+                <div class="campo_texto">
+                  <textarea id="descripcion" name="descripcion" required class="inp_textarea"></textarea>
+                  <label for="descripcion" class="lbl"><span class="text-nomb">Descripción del producto</span></label>
+                  <span class="inp-msg-error">Este campo es requerido</span>
+                </div>
+                <br>
+                <input class="btn btn_principal" type="submit" value="Agregar producto">
+            </form>
+        </div>
+      </div>
     </section>
+
+    <section class="rodapie container"></section>
 
     <footer></footer>
     <script src="/scripts/inserciones.js"></script>

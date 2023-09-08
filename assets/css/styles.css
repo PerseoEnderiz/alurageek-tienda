@@ -20,6 +20,8 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 7rem;
+    box-sizing: content-box;
 }
 .btn_login{
     background-color: var(--preto-branco);

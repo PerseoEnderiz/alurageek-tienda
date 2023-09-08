@@ -1,0 +1,41 @@
+@import url(./inputs.css);
+.formulario{
+    font-family: var(--rwFont);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.formulario_titulo{
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    color: var(--preto-100);
+}
+.formulario_contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.formulario form{
+    padding: 1rem 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:1024px){
+    .formulario{
+        width: 35rem;
+    }
+    .formulario_contenido{
+        width: 35rem
+    }
+    .formulario form{
+        width: 100%;
+    }
+    .formulario_titulo{
+        font-size: 1rem;
+    }
+}

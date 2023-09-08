@@ -11,7 +11,9 @@
 .categoria_encabezado{
     display: flex;
     justify-content: space-between;
-    
+}
+.categoria_encabezado_titulo{
+    color: var(--preto-100);
 }
 .categoria_productos{
     display: flex;
@@ -23,5 +25,6 @@
 @media screen and (min-width:1024px){
     .categoria_contenido{
         width: 75%;
+        flex-wrap: nowrap;
     }
 }

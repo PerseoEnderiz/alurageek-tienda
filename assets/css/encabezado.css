@@ -8,6 +8,7 @@
 }
 .encabezado_contenido{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     width: 100%;
@@ -41,5 +42,18 @@
     .encabezado_contenido{
         width: 75%;
         height: 4.5rem;
+        justify-content: flex-start;
+        gap: 2rem;
+        position: relative;
     }
+    .encabezado .busqueda{
+        order: 2;
+    }
+
+    .encabezado .btn_login{
+        order: 3;
+        position: absolute;
+        right: 0;
+    }
+
 }

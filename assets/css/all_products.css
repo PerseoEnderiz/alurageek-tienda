@@ -1,0 +1,17 @@
+.all_products .categoria_encabezado{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.all_products .btn_principal{
+    width: 9rem;
+}
+
+@media screen and (min-width:600px){
+    .all_products .categoria_encabezado{
+        flex-direction: row;
+        gap:0;
+        align-items: center;
+    }
+}

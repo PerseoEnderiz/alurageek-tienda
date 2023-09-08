@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../assets/css/normalize.css">
         <link rel="stylesheet" href="../assets/css/bases.css">
         <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/login.css">
     
     <!-- Importacion fuentes -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,6 +19,29 @@
   </head>
   <body>
     <header class="encabezado container"></header>
+
+    <section class="login container">
+       <div class="formulario">
+         <div class="formulario_contenido">
+             <h2 class="formulario_titulo">Iniciar Sesión</h2>
+             <form action="enviar.php" method="post">
+                 <div class="campo_texto">
+                     <input type="text" id="email" name="email" required class="inp">
+                     <label for="email" class="lbl"><span class="text-nomb">Email</span></label>
+                     <span class="inp-msg-error">Este campo es requerido</span>
+                 </div>
+                 <br>
+                 <div class="campo_texto">
+                     <input type="password" id="password" name="password" required class="inp">
+                     <label for="password" class="lbl"><span class="text-nomb">Contraseña</span></label>
+                     <span class="inp-msg-error">Este campo es requerido</span>
+                 </div>
+                 <br>
+                 <input class="btn btn_principal" type="submit" value="Entrar">
+             </form>
+         </div>
+       </div>
+    </section>    
 
     <section class="rodapie container">
     </section>
