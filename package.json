@@ -1,0 +1,25 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "alurageek-admin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PerseoEnderiz/alurageek-tienda.git"
+  },
+  "keywords": [
+    "Alura"
+  ],
+  "author": "Juan García",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PerseoEnderiz/alurageek-tienda/issues"
+  },
+  "homepage": "https://github.com/PerseoEnderiz/alurageek-tienda.git",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
