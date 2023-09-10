@@ -11,9 +11,12 @@
 .producto_precio{
     font-size: 1rem;
 }
+.producto_encabezado{
+    position: relative;
+}
 
 .producto_img {
-    background: url("../img/nintendo.jpeg") 50% 50% / cover no-repeat, lightgray 50%;
+    background: lightgray 50%;
     width: 100%;
     height: 11rem;
     object-fit: cover;
@@ -25,5 +28,21 @@
     gap: 0.5rem;
     width: 100%;
     color: var(--preto-100);
+}
+.producto_encabezado button{
+    background: transparent;
+    border: none;
+    box-sizing: content-box;
+    position:absolute;
+    top: 0.8rem;
+    cursor: pointer;
+    color: var(--preto-branco);
+}
+
+.btn_trash{
+    left: 0.5rem;
+}
+.btn_edit{
+    right: 0.5rem;
 }
   

@@ -24,7 +24,7 @@
       <div class="formulario">
         <div class="formulario_contenido">
             <h2 class="formulario_titulo titulo">Agregar nuevo producto</h2>
-            <form action="enviar.php" method="post">
+            <form method="post" data-form>
                 <div class="campo_texto">
                     <input type="url" id="url_img" name="url_img" required class="inp">
                     <label for="url_img" class="lbl"><span class="text-nomb">URL de la imagen</span></label>
@@ -64,6 +64,9 @@
     <section class="rodapie container"></section>
 
     <footer></footer>
+    <!-- Vincular con el archivo que asigna id desde uuid CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
     <script src="../scripts/inserciones.js"></script>
+    <script type="module" src="../controllers/registrar_producto.js"></script>
   </body>
 </html>

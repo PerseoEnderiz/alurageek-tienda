@@ -1,28 +1,44 @@
 {
-    "productos": [
-      {
-        "categoria": "StarWars",
-        "id": 1,
-        "nombre": "Producto XYZ",
-        "precio": 60,
-        "descripcion": "Descripción del producto",
-        "imagen": "https://s3-alpha-sig.figma.com/img/8238/111b/31785f700a9fb63c75604c23eb944720?Expires=1694995200&Signature=nu~YQnIi-Q0z3GRPR0s15p2u4EY8H8txInreMIiz7ENy4eTMZaiI8uFClNPHKteTTUhLIarijKwP2l5EEhouDq5OSnMhZet7V7MgOvvjh7dqhxPYMeKxMKpx8SMFJuzfvGEMDRdPASET8SnMWLCMkiejKk~TG7TC9NJ1zmewzSQwIoUxE-8aFJ4tz1vGUfD1U1SLblEwdvvOxMVP~KVYRkLaajafNKINFPYz0PkEowpbpEFj2aOeD04iAPu6xoHU725mooNsQAIRxwLMUxKXT8I7laK9BA1do2KsaXmuAwt3YEqBbfMcE5Lrfj~KcoiS09d2PRsM86yrHE2SNvebpA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-      },
-      {
-        "categoria": "StarWars",
-        "id": 2,
-        "nombre": "Producto XYZ",
-        "precio": 60,
-        "descripcion": "Descripción del producto",
-        "imagen": "https://s3-alpha-sig.figma.com/img/7288/617c/839c11fc3105027e126215f3647fa5b0?Expires=1694995200&Signature=AquosCok5jfpsDO~hJZO8MAN-3LQENC-Of7w4BEp5oqC332aCpQuNisXw0mT21Aav5q3Ae948eXJVL8-UQ~JX43gfhz5zpH-F9vCIUnJLC~0l4J7l-h0tH67sRaEmCc4TQ48iLflqHoNO2PY777lFbzR50tAZ6jgfY~GZHrucSoHMjGCKtFwVv52nJeOnUq5GTD1dKphIu01P08oEujMzhjVzaWZU94oJbzof6lfXBmEd4UIkLbsmBzjKESSpM0if-54wn58YyBo0BcsTzk52tmLNuM3h8ajDslNSitSIxlsNCq0NlmbGKejltgqwnV4yaas-G8OXbZ7Uyi6FDKFDA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-      },
-      {
-        "categoria": "StarWars",
-        "id": 3,
-        "nombre": "Producto XYZ",
-        "precio": 60,
-        "descripcion": "Descripción del producto",
-        "imagen": "https://s3-alpha-sig.figma.com/img/42e5/511d/c4cea6462e083470202684c700aa5a07?Expires=1694995200&Signature=e-ccqP3cmSwV0j50xlSuBSpCBTcMI4OsaENIFIIOXgCYECpe9kUiUHYHSaJn3rO7L1Fe-g82f-P5zHWuiqfU2A9r0ws45TDgdVuU5QO3ccCBYPda1md40dKT01cLSa~32KENLlH1MwVAQhpYKsYxd18a9PgD5QmliD41hrIVWe44YxnC5IcaX2tZR~hgxqFBJ5DrXnHIhngyf1Env5MQicq0epUYMRB6gEdbA5zvxymdbZfP1EV98PdL6qyX1idNH~N4haUobEI5chSPPiJHcN3aURrfLOexK40csUbA5cnSyWgTwdXokF9v-QMvmjmllk0Xe0~XOXELG-WM8TcMQQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-      }
-    ]
+  "productos": [
+    {
+      "url_img": "https://geektrippers.com/wp-content/uploads/2020/07/michael-marais-1VV1MRafd7A-unsplash-1536x1024.jpg",
+      "categoria": "StarWars",
+      "nombre_producto": "Producto XYZ",
+      "precio_producto": "$60.00",
+      "descripcion": "Descripción del producto",
+      "id": 1
+    },
+    {
+      "url_img": "https://damianrcabrera.github.io/ecommerce-aluraone-desafio04/public/assets/img/viewProduct/viewProduct.jpg",
+      "categoria": "StarWars",
+      "nombre_producto": "Producto XYZ",
+      "precio_producto": "$60.00",
+      "descripcion": "Descripción del producto",
+      "id": 2
+    },
+    {
+      "url_img": "https://s3-alpha-sig.figma.com/img/42e5/511d/c4cea6462e083470202684c700aa5a07?Expires=1694995200&Signature=e-ccqP3cmSwV0j50xlSuBSpCBTcMI4OsaENIFIIOXgCYECpe9kUiUHYHSaJn3rO7L1Fe-g82f-P5zHWuiqfU2A9r0ws45TDgdVuU5QO3ccCBYPda1md40dKT01cLSa~32KENLlH1MwVAQhpYKsYxd18a9PgD5QmliD41hrIVWe44YxnC5IcaX2tZR~hgxqFBJ5DrXnHIhngyf1Env5MQicq0epUYMRB6gEdbA5zvxymdbZfP1EV98PdL6qyX1idNH~N4haUobEI5chSPPiJHcN3aURrfLOexK40csUbA5cnSyWgTwdXokF9v-QMvmjmllk0Xe0~XOXELG-WM8TcMQQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "categoria": "StarWars",
+      "nombre_producto": "Producto XYZ",
+      "precio_producto": "$60.00",
+      "descripcion": "Descripción del producto",
+      "id": 3
+    },
+    {
+      "url_img": "https://allthedifferences.com/wp-content/uploads/2022/10/jonathan-cooper-R8L1l9RN198-unsplash-1-728x546.jpg.webp",
+      "categoria": "StarWars",
+      "nombre_producto": "Producto XYZ",
+      "precio_producto": "$60.00",
+      "descripcion": "Descripción del producto",
+      "id": 4
+    },
+    {
+      "url_img": "https://i.pinimg.com/originals/11/f8/f3/11f8f35985c6ad6a6762a94da3dab01c.jpg",
+      "categoria": "Marvel",
+      "nombre_producto": "Superheroes",
+      "precio_producto": "$120.00",
+      "descripcion": "Posters de superheroes",
+      "id": "282471b2-6894-4300-8b42-e18712179c85"
+    }
+  ]
 }
