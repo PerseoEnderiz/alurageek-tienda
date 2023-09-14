@@ -86,4 +86,11 @@
         width: 11rem;
         gap: 1.5rem;
     }
+    .rodapie .formulario {
+        position: static; /* Restablece la posición */
+        right: auto; /* Restablece la propiedad right */
+        width: auto; /* Restablece el ancho */
+        top: auto; /* Restablece la propiedad top */
+        transform: none; /* Restablece la transformación */
+    }
 }
