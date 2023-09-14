@@ -1,0 +1,54 @@
+.busqueda_campo{
+    display: flex;
+    box-sizing: content-box;
+    background-color: var(--cor-de-fundo);
+    border-radius: 1.25rem;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+}
+.busqueda_campo form{
+    display: flex;
+    background: transparent;
+    padding: 0;
+}
+.busqueda_inp{
+    border: none;
+    display: none;
+    background: transparent;
+    padding: 0;
+}
+.busqueda_campo button{
+    border: none;
+    background: transparent;
+    padding: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.busqueda_img{
+    border: none;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media screen and (min-width:600px){
+    .busqueda_inp{
+        display: flex;
+        width: 15.5rem;
+        font-size: 0.875rem;
+    }
+    .busqueda_inp:focus{
+        outline: none;
+    }
+    .busqueda_campo{
+        width: 17rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .busqueda_inp{
+        width: 23rem;
+    }
+    .busqueda_campo{
+        width: 24.5rem;
+    }
+}

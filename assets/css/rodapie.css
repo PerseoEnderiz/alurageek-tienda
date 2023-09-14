@@ -36,6 +36,30 @@
     color: var(--preto-100, #464646);
     font-size: 1rem;
 }
+@media screen and (min-width:600px){
+    .rodapie_contenido{
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 95%;
+        position: relative;
+    }
+    .rodapie .formulario{
+        position:absolute;
+        right: 0;
+        width: 70%;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+    .rodapie .menu, .rodapie .menu ul{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 11rem;
+        gap: 1.5rem;
+    }
+}
 @media screen and (min-width:1024px){
     .rodapie{
         padding: 4rem;

@@ -1,3 +1,4 @@
+@import url(./busqueda.css);
 .encabezado{
     display: flex;
     align-items: center;
@@ -33,11 +34,23 @@
     width: 1.75rem;
     height: 1.75rem;
 }
-
-.busqueda{
-    width: 1.5rem;
-    height: 1.5rem;
+@media screen and (min-width:600px){
+    .encabezado_contenido{
+        height: 4.5rem;
+        justify-content: flex-start;
+        gap: 2rem;
+        position: relative;
+    }
+    .encabezado .busqueda_campo{
+        order: 2;
+    }
+    .encabezado .btn_login{
+        order: 3;
+        position: absolute;
+        right: 0;
+    }
 }
+
 @media screen and (min-width:1024px){
     .encabezado_contenido{
         width: 75%;
@@ -46,7 +59,7 @@
         gap: 2rem;
         position: relative;
     }
-    .encabezado .busqueda{
+    .encabezado .busqueda_campo{
         order: 2;
     }
 
