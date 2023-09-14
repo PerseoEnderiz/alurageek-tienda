@@ -1,0 +1,17 @@
+.reg_sucess{
+    display: flex;
+    justify-content: center;
+}
+.reg_sucess_contenido{
+    border: solid green 0.5rem;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 20% 0;
+}
+.iconSucess{
+    color: green;
+    font-size: 4rem;
+}

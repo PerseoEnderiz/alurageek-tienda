@@ -23,7 +23,7 @@ const crearProducto = (url_img, categoria, nombre_producto, precio_producto, des
     const btnTrash = producto.querySelector(".btn_trash");
     btnTrash.addEventListener("click", () => {
         const id = btnTrash.id;
-        productServices.eliminarProducto(id).then(alert("Eliminacion exitosa") ).catch( err => alert("Error al eliminar cliente"));
+        productServices.eliminarProducto(id).then(alert("Eliminacion exitosa") ).catch( err => alert("Error al eliminar producto"));
     })
     const btnEdit = producto.querySelector(".btn_edit");
     btnEdit.addEventListener("click", () => {
@@ -50,4 +50,4 @@ productServices
             });
         })
         // el metodo catch cuando hay error
-        .catch((error) => {alert("Error al obtener lista de clientes");});
+        .catch((error) => {alert("Error al obtener lista de productos");});
