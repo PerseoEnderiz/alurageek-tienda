@@ -23,7 +23,7 @@
     margin: 0 auto;
     width: 6.875rem;
 }
-@media screen and (min-width:1024px){
+@media screen and (min-width:600px){
     .login_contenido{
         width:50%;
         gap: 1rem;

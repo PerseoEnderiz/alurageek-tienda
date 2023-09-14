@@ -4,7 +4,7 @@ import { productServices } from "../service/product-services.js";
 
 //Crea el codigo html que se necesita para un registro
 //Genera template
-const crearProducto = (url_img, categoria, nombre_producto, precio_producto, descripcion, id) => {
+export const crearProducto = (url_img, categoria, nombre_producto, precio_producto, descripcion, id) => {
     const producto = document.createElement("div");
     producto.classList.add("tarjetaProducto");
     const contenido = /*html*/`
@@ -32,22 +32,39 @@ const crearProducto = (url_img, categoria, nombre_producto, precio_producto, des
     })
     return producto;
   };
-  
-  const categoriaProductos = document.querySelector(".categoria_productos");
 
-  //De este objeto promesa "listaClientes", solicito dos metodos
-productServices
-    .listaProductos()
-        // El metodo Then, que es la respuesta
-        //Es El resultado de una solicitud exitosa al servidor
-        //Then puede desencadenar muchas acciones continuas sin necesidad de identar una tras otra
-        .then((data) => {
-            //para cada perfil agrega una nueva linea
-            data.forEach(({url_img, categoria, nombre_producto, precio_producto, descripcion, id}) => {
+export const agregarProductosACategoria = (categoriaProductos) => {
+productServices.listaProductos()
+    .then((data) => {
+        // Para cada producto, verifica si su categoría coincide con el id del elemento actual
+        data.forEach(({url_img, categoria, nombre_producto, precio_producto, descripcion, id}) => {
+            if (categoria === categoriaProductos.id) {
+                // Si coincide, crea el producto y agrégalo al elemento
                 const nuevoProducto = crearProducto(url_img, categoria, nombre_producto, precio_producto, descripcion, id);
-                // Agregalo a la tabla
                 categoriaProductos.appendChild(nuevoProducto);
-            });
-        })
-        // el metodo catch cuando hay error
-        .catch((error) => {alert("Error al obtener lista de productos");});
+            }
+        });
+    })
+    .catch((error) => {alert("Error al obtener lista de productos");});
+};
+
+/* // Selecciona todos los elementos con la clase "categoria_productos"
+const categoriasProductos = document.querySelectorAll(".categoria_productos");
+console.log(categoriasProductos);
+
+// Itera sobre cada elemento
+categoriasProductos.forEach(categoriaProductos => {
+  // Solicita la lista de productos
+  productServices.listaProductos()
+    .then((data) => {
+      // Para cada producto, verifica si su categoría coincide con el id del elemento actual
+      data.forEach(({url_img, categoria, nombre_producto, precio_producto, descripcion, id}) => {
+        if (categoria === categoriaProductos.id) {
+          // Si coincide, crea el producto y agrégalo al elemento
+          const nuevoProducto = crearProducto(url_img, categoria, nombre_producto, precio_producto, descripcion, id);
+          categoriaProductos.appendChild(nuevoProducto);
+        }
+      });
+    })
+    .catch((error) => {alert("Error al obtener lista de productos");});
+}); */

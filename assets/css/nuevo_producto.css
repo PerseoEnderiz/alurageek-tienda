@@ -24,6 +24,9 @@
     margin: 0 auto;
     width: 6.875rem;
 }
+.nuevo_producto .formulario{
+    margin: 0 auto;
+}
 @media screen and (min-width:1024px){
 
     .nuevo_producto .campo_texo,.inp, .lbl{

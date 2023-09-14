@@ -46,7 +46,14 @@
     .rodapie .formulario{
         position:absolute;
         right: 0;
-        width: 70%;
+        width: 60%;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+    .rodapie .formulario_contenido{
+        position:absolute;
+        right: 0;
+        width: 100%;
         top: 50%;
         transform: translate(0%, -50%);
     }
