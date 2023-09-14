@@ -95,9 +95,12 @@
     }
     .rodapie .formulario {
         position: static; /* Restablece la posición */
-        right: auto; /* Restablece la propiedad right */
-        width: auto; /* Restablece el ancho */
-        top: auto; /* Restablece la propiedad top */
+        width: 60%; /* Restablece el ancho */
+        transform: none; /* Restablece la transformación */
+    }
+    .rodapie .formulario_contenido {
+        position: static; /* Restablece la posición */
+        width: 100%; /* Restablece el ancho */
         transform: none; /* Restablece la transformación */
     }
 }
