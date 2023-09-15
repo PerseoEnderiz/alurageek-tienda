@@ -32,25 +32,25 @@
                 </div>
                 <br>
                 <div class="campo_texto">
-                    <input type="text" id="categoria" name="categoria" required class="inp">
+                    <input type="text" id="categoria" name="categoria" required class="inp" data-tipo="categoria">
                     <label for="categoria" class="lbl"><span class="text-nomb">Categoría</span></label>
                     <span class="inp-msg-error">Este campo es requerido</span>
                 </div>
                 <br>
                 <div class="campo_texto">
-                  <input type="text" id="nombre_producto" name="nombre_producto" required class="inp">
+                  <input type="text" id="nombre_producto" name="nombre_producto" required class="inp" data-tipo="nombre_producto">
                   <label for="nombre_producto" class="lbl"><span class="text-nomb">Nombre del producto</span></label>
                   <span class="inp-msg-error">Este campo es requerido</span>
                 </div>
                 <br>
                 <div class="campo_texto">
-                  <input type="number" id="precio_producto" name="precio_producto" required class="inp">
+                  <input type="number" id="precio_producto" name="precio_producto" required class="inp" data-form="precio_producto">
                   <label for="precio_producto" class="lbl"><span class="text-nomb">Precio del producto</span></label>
                   <span class="inp-msg-error">Este campo es requerido</span>
                 </div>
                 <br>
                 <div class="campo_texto">
-                  <textarea id="descripcion" name="descripcion" required class="inp_textarea"></textarea>
+                  <textarea id="descripcion" name="descripcion" required class="inp_textarea" data-tipo="descripcion"></textarea>
                   <label for="descripcion" class="lbl"><span class="text-nomb">Descripción del producto</span></label>
                   <span class="inp-msg-error">Este campo es requerido</span>
                 </div>
@@ -67,6 +67,7 @@
     <!-- Vincular con el archivo que asigna id desde uuid CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
     <script src="../scripts/inserciones.js"></script>
+    <script type="module" src="../scripts/selectInputs.js"></script>
     <script type="module" src="../controllers/registrar_producto.js"></script>
   </body>
 </html>

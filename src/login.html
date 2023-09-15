@@ -26,13 +26,13 @@
              <h2 class="formulario_titulo">Iniciar Sesión</h2>
              <form action="enviar.php" method="post">
                  <div class="campo_texto">
-                     <input type="text" id="email" name="email" required class="inp">
-                     <label for="email" class="lbl"><span class="text-nomb">Email</span></label>
-                     <span class="inp-msg-error">Este campo es requerido</span>
+                    <input type="email" id="email" name="email" required class="inp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <label for="email" class="lbl"><span class="text-nomb">Email</span></label>
+                    <span class="inp-msg-error">Este campo es requerido</span>                  
                  </div>
                  <br>
                  <div class="campo_texto">
-                     <input type="password" id="password" name="password" required class="inp">
+                     <input type="password" id="password" name="password" required class="inp" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?!.*[$@$!%*?&])([A-Za-z\d]|[^$@$!%*?&]|[^ ]){6,12}$">
                      <label for="password" class="lbl"><span class="text-nomb">Contraseña</span></label>
                      <span class="inp-msg-error">Este campo es requerido</span>
                  </div>
@@ -48,5 +48,6 @@
 
     <footer></footer>
     <script src="../scripts/inserciones.js"></script>
+    <script type="module" src="../scripts/selectInputs.js"></script>
   </body>
 </html>

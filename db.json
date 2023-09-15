@@ -103,54 +103,6 @@
       "precio_producto": "$60.00",
       "descripcion": "GameBoy Color",
       "id": "149d03fd-4371-488a-8aaa-56d1c359eb50"
-    },
-    {
-      "url_img": "https://s3-alpha-sig.figma.com/img/493d/6142/e62958a50f8950209a4e73f8f281586b?Expires=1695600000&Signature=h2-Bk9AF6b1Ur6UB3movXcvnZbsId1xPNruksDcl-qxpYoX-vyzluHlNHB0ki9po6VuLQThuepkh3jCAPcwiFEuSrCjat~LcdBwOqW1hoFHCK1Bab5CWHRCTGlCvvKxkM0MznXjYFrhjiSsqbDSKnf~oAY79f~IW2EmGCgASFkK5U2yZGg8ZoCvkXkbY1nIVBBqv9Ab5FjLg7blFIe-aJkNlVotUdHyHifoDFZKtSZmIyetSkEPq9F3xDn2agbAHe5KTbEjET6SIGgVRa9wXK~RAMgk0FlN9liiioPrK-2r-tDKXVxwwRJvdktOvJYvbmeO3GyETSO1JDVGCZxgCkw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "categoria": "Diversos",
-      "nombre_producto": "Producto XYZ",
-      "precio_producto": "$60.00",
-      "descripcion": "Descripción Producto XYZ",
-      "id": "33fcea70-6820-4c0a-a7b6-9a5669f573fa"
-    },
-    {
-      "url_img": "https://s3-alpha-sig.figma.com/img/9480/fb66/90a0dcbd12570f85e3cb01254c7221f5?Expires=1695600000&Signature=Kr~HccwVJAop7mYHuVc41d867ybEFhzGP5IKLcfjAfkFb2Fnj~nfcpUuEUcw7N1jaVdqBDOPhkiOYPi0~R6H8aC~5Lj7pKhduIqAuQoaWCfekxt9ZFwgWDDSELMEFqBIexSNOu-OToOaKOoMWJW0ukwuG~1vPTrxWfPG1eYiHxuItvtUphEtZvN3FY8bv8HnMcgNcunPYsMHX3DooW81dRlLQApbmgagAJ6lQLVCaotD5vfqDqUALetJZrrb~T1QO2mczn~Kt0tCqZwlSgzrPFhHUY27WeE9RxFOEbinliMME3eQBQupv3NKEvqo15E0UkvdfuxW-7yI~KPyyrOtLA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "categoria": "Diversos",
-      "nombre_producto": "Producto XYZ",
-      "precio_producto": "$60.00",
-      "descripcion": "Descripción Producto XYZ",
-      "id": "32e252d8-5585-49d2-81b5-f86a69d264b6"
-    },
-    {
-      "url_img": "https://s3-alpha-sig.figma.com/img/d7ea/7cc6/aecdbd47699e06f6134380744d43394f?Expires=1695600000&Signature=KzmNQA6N8eV362BnvnyYo0vYnHubqNqsl4zHjteV-KmZHvc37HXFEAW1g63f2umfAU2J5D2liX1tlqSIe097boHJYQgQ2AK6cOCzucFSM1KQYrEIk1So~XyU-JZ4gPU9NFkS9-QM7kKfW-RFBqg3Br-llXkEm-sw19OvjnT09gp1bVVdBS95~QdZLiSJfuu6kCsU-RH9zpRYVp9~AJjH9iWP6dX0AkYanBA7velTJ91oaF1HR7CQbsFoEmFiH8a0FTQjEvqqJBeG8wIoINgJNZm8H9QnmRRkvebkiS1vEinczj8WeNybJ~I~Nz1xsoWGfGFf6Ty8e9fyJIAANHRw8A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "categoria": "Diversos",
-      "nombre_producto": "Producto XYZ",
-      "precio_producto": "$60.00",
-      "descripcion": "Descripción Producto XYZ",
-      "id": "e26d9cf0-f029-4c66-b1a4-d83f1057245c"
-    },
-    {
-      "url_img": "https://s3-alpha-sig.figma.com/img/235b/6bc7/daa13645ac1c7ceed6a220f0929fc13b?Expires=1695600000&Signature=Dn6SY0PFpP3o9F7ZIFPwtvK~rzoQmbeJnJ3~~XEFZ5I5NbjLsDIpQE4413qOmEVRwKI2YVpnz19z7Vso9NtH3qC~XDIEp7juV-e4ycfbLLaB4VNwS5tBCFgoJv5rZK~dB-1QiRzedr1pPiptW9MSolwhX0p13-4WtbeMr9CyVGMkhliyFoix3ngxmdeWJS-dQg~MBxePN51yloamaVm2qogmj1iIAqqjo3ZBMalMcGSMJt2zSEQhlXyskPhX-1JcpIw6972NOAtzR1iXLQNmSnUDjfhGWxQbD2lXIbEloYFz5RH1vqYzi59F6saacTeyR6ByAcr6oXqewe0-~NJQgw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "categoria": "Diversos",
-      "nombre_producto": "Producto XYZ",
-      "precio_producto": "$60.00",
-      "descripcion": "Descripción Producto XYZ",
-      "id": "b92d8171-1401-400b-b14c-5c1008f20409"
-    },
-    {
-      "url_img": "https://s3-alpha-sig.figma.com/img/8407/a102/3dbd2090c50fb3e36c54947c985f1820?Expires=1695600000&Signature=PckL3xdSc21b1iQOo93AsPVz0RVLjY1BoBlT~FQIgSVdQJ-mpGCDWvLRqh-iP334q5t5eP6gFipZESpX7rf43vAEjrEy-R~CYglfAtIhUs282f9Gd2L7udYUJ1~bMKGgw9KqV0uulbnpB5k7eWW67wiPKPO1loztUq7EE5ddNIUJjSDDIYMHpRicf7OUIb32H6nad4cy2bDhiv9Miqms8hCTNcVMI9-8rqzYvZDmgUoHiQzoFtG9PjFaym8zdbyFHxvWTn9vkZn0UBj1SWoadSQy5fLJlzVh8x3HwaMaPhhsTct28TqB-mEuhq6K-EcDzBFJUsjlvwaxaMRteuyP7Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "categoria": "Diversos",
-      "nombre_producto": "Producto XYZ",
-      "precio_producto": "$60.00",
-      "descripcion": "Descripción Producto XYZ",
-      "id": "14510be7-7c76-4054-9e19-252c5387e34e"
-    },
-    {
-      "url_img": "https://s3-alpha-sig.figma.com/img/ead5/4f1a/2e68ded1f8a4b87f715a5698d23e78bd?Expires=1695600000&Signature=o3ZKdEHdtazrft1GHYAK1oCddEXC5uadSThqnHbIqlH2Q4Y~khTra~pqgOLKp7olhu4uikhP2r7uY6Qz0kZUvf~0TorzMasrIC5Z1YwE6A2Tfzo7XoO6HI5xMQ4r0bZXN6lXS3-qrdVsxV2~yW6Cs4kQwyLV~ibaABVkNRyVPxyPthsx9yI2LYPRULw0fHuHyBcFWxANFDjdxpGEiym6MFbKoiniauTLMjRbZ7A~saCo9INdb9qh~z~7xuxTMr0GAhiGkfJYh10f~N4EHyK0R7PfHqdaqimBajDWBGiiK58Y0oAJHl2iTKaw01Tgg9Op0TFy~1S8gvpF1qx8iM-phA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "categoria": "Diversos",
-      "nombre_producto": "Producto XYZ",
-      "precio_producto": "$60.00",
-      "descripcion": "Descripción Producto XYZ",
-      "id": "9e7fb6ff-ea88-4982-8522-ff90a4f5adfd"
     }
   ]
 }

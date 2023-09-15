@@ -67,13 +67,13 @@ const contacto = /*html*/`
         <h2 class="formulario_titulo">Hable con nosotros</h2>
         <form action="enviar.php" method="post">
             <div class="campo_texto">
-                <input type="text" id="nombre" name="nombre" required class="inp" placeholder="Aqui va el nombre">
+                <input type="text" id="nombre" name="nombre" required class="inp" placeholder="Aqui va el nombre" data-tipo="nombre" pattern="[A-Za-z]{3,50}">
                 <label for="nombre" class="lbl"><span class="text-nomb">Nombre</span></label>
                 <span class="inp-msg-error">Este campo es requerido</span>
             </div>
             <br>
             <div class="campo_texto">
-                <textarea id="mensaje" name="mensaje" required class="inp_textarea"></textarea>
+                <textarea id="mensaje" name="mensaje" required class="inp_textarea" data-tipo="mensaje" pattern="[A-Za-z]{3,200}"></textarea>
                 <label for="mensaje" class="lbl"><span class="text-nomb">Mensaje</span></label>
                 <span class="inp-msg-error">Este campo es requerido</span>
             </div>
@@ -82,6 +82,8 @@ const contacto = /*html*/`
         </form>
     </div>
 </div>
+
+
 `
 const rodapie_full = document.createElement("div");
 rodapie_full.classList = "rodapie_contenido";
