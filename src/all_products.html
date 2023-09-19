@@ -20,6 +20,21 @@
     <header class="encabezado container"></header>
 
     <div class="all_products container">
+        <section class="categorias_contenedor">
+            
+        </section>
+    </div>
+
+    <script type="module">
+        import {crearCategoria} from "../controllers/category_controller.js"
+        let params = new URLSearchParams(window.location.search);
+        let idCat = params.get('id');
+        const categoriasContenedor = document.querySelector(".categorias_contenedor");
+        const nuevaCategoria = crearCategoria(idCat);
+        categoriasContenedor.appendChild(nuevaCategoria);
+    </script>
+
+    <!-- <div class="all_products container">
         <section class="categoria container">
             <div class="categoria_contenido">
               <div class="categoria_encabezado">
@@ -103,7 +118,7 @@
             </div>
          </section>
 
-    </div>
+    </div> -->
 
     <section class="rodapie container">
     </section>

@@ -1,14 +1,14 @@
 // Función que determina que funcion de validacion llamar
 //Función que recibe el input que fue llenado y llama a la función para verificar patron o reglas establecidas
 const validadores = {
-    nombre: (input) => validarNombre(input),
-    mensaje: (input) => validarMensaje(input),
-    email: (input) => validarEmail(input),
-    password: (input) => validarPassword(input),
-    nombre_producto: (input) => validarNombreProducto(input),
-    precio_producto: (input) => validarPrecioProducto(input),
-    descripcion: (input) => validarDescripcion(input),
-    categoria: (input) => validarCategoria(input)
+    // nombre: (input) => validarNombre(input),
+    // mensaje: (input) => validarMensaje(input),
+    // email: (input) => validarEmail(input),
+    // password: (input) => validarPassword(input),
+    // nombre_producto: (input) => validarNombreProducto(input),
+    // precio_producto: (input) => validarPrecioProducto(input),
+    // descripcion: (input) => validarDescripcion(input),
+    // categoria: (input) => validarCategoria(input)
 };
 
 function valida(input) {
@@ -49,8 +49,8 @@ const mensajesDeError = {
     },
     email: {
         valueMissing: "Ingrese un correo",
-        typeMismatch: "El correo no es valido",
-        patternMismatch: "El correo debe contener un nombre de usuario. Luego un símbolo @ seguido de un nombre de dominio. Finalmente, debe haber un punto seguido de dos o más letras minúsculas."
+        // typeMismatch: "El correo no es valido",
+        typeMismatch: "El correo debe contener un nombre de usuario. Luego un símbolo @ seguido de un nombre de dominio. Finalmente, debe haber un punto seguido de dos o más letras minúsculas."
     },
     password: {
         valueMissing: "Debe ingresar una contraseña",
@@ -74,22 +74,23 @@ const mensajesDeError = {
     }
 };
 
-//Funcion que determina que mensaje de eeror corresponde
-function mostrarMensajeError(tipoDeInput,input){
+
+function mostrarMensajeError(tipoDeInput, input) {
     let mensaje = "";
 
     //funcion anonima que comprueba que error fue
-    tipoDeErrores.forEach((error) =>{
+    tipoDeErrores.forEach((error) => {
         if (input.validity[error]) {
-            /*//Si hay error, dime cual fue
+            //Si hay error, dime cual fue
             console.log(error); //que error
             console.log(input); //donde
-            console.log(mensajesDeError[tipoDeInput][error]); //mensaje a mostrar */
+            console.log(mensajesDeError[tipoDeInput][error]); //mensaje a mostrar
             mensaje = mensajesDeError[tipoDeInput][error];
         }
     })
 
 
-    return  mensaje;
+    return mensaje;
 }
+
 export default valida;

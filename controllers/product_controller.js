@@ -43,6 +43,10 @@ productServices.listaProductos()
                 const nuevoProducto = crearProducto(url_img, categoria, nombre_producto, precio_producto, descripcion, id);
                 categoriaProductos.appendChild(nuevoProducto);
             }
+            else if(categoriaProductos.id == "Todos"){
+                const nuevoProducto = crearProducto(url_img, categoria, nombre_producto, precio_producto, descripcion, id);
+                categoriaProductos.appendChild(nuevoProducto);
+            }
         });
     })
     .catch((error) => {alert("Error al obtener lista de productos");});

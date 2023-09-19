@@ -37,8 +37,12 @@
 
     <footer></footer>
     <script src="./scripts/inserciones.js"></script>
+    <script type="module">
+        import {listaCategorias} from "./controllers/category_controller.js"
+        // const categoriasContenedor = document.querySelector(".categorias_contenedor");
+        listaCategorias();
+    </script>
     <script type="module" src="../scripts/selectInputs.js"></script>
-    <script type="module" src="./controllers/category_controller.js"></script>
 
 </div>
 </html>

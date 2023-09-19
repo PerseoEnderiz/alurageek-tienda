@@ -81,6 +81,10 @@
   
   .campo_texto--invalido .lbl {
     color: var(--info-color);
+    font-weight: 400;
+    line-height: 1rem;
+    font-size: 0.875rem;
+    transform: translateY(-20%);
   }
   
   .inp-msg-error {
@@ -95,7 +99,7 @@
 
 .inp_textarea{
     height: 4.125rem;
-    padding: 1.45rem 0 0.63rem 0.63rem;
+    padding: 1.45rem 0 0.63rem 1rem;
     font-family: var(--rwFont);
     font-size: 1rem;
     font-weight: 400;
