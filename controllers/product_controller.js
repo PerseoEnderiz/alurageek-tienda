@@ -11,7 +11,7 @@ export const crearProducto = (url_img, categoria, nombre_producto, precio_produc
         <div class="producto_encabezado">
             <button class="btn_trash" id="${id}"><i class="fa-solid fa-trash"></i></button>
             <img src="${url_img}" alt="img_prod" class="producto_img">
-            <button type="button" class="btn_edit" id="${id}"  onclick="window.location.href='../src/login.html?id=${id}'"><i class="fa-solid fa-pen"></i></button>
+            <button type="button" class="btn_edit" id="${id}"  onclick="window.location.href='../src/edit_product.html?id=${id}'"><i class="fa-solid fa-pen"></i></button>
         </div>                
         <div class="producto_texto">
             <h3 class="producto_titulo descripcion">${nombre_producto}</h3>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- importacion de estilos -->
+        <!-- correcion de estilos en navegadores -->
+        <link rel="stylesheet" href="../assets/css/normalize.css">
+        <link rel="stylesheet" href="../assets/css/bases.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/nuevo_producto.css"
+    
+    <!-- Importacion fuentes -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--Librería de iconos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header class="encabezado container"></header>
+    
+    <section class="nuevo_producto container">
+        <div class="formulario">
+          <div class="formulario_contenido">
+              <h2 class="formulario_titulo titulo">Editar producto</h2>
+              <form method="post" data-form>
+                  <div class="campo_texto">
+                      <input type="url" id="url_img" name="url_img" required class="inp">
+                      <label for="url_img" class="lbl"><span class="text-nomb">URL de la imagen</span></label>
+                      <span class="inp-msg-error">Este campo es requerido</span>
+                  </div>
+                  <br>
+                  <div class="campo_texto">
+                      <input type="text" id="categoria" name="categoria" required class="inp" data-tipo="categoria">
+                      <label for="categoria" class="lbl"><span class="text-nomb">Categoría</span></label>
+                      <span class="inp-msg-error">Este campo es requerido</span>
+                  </div>
+                  <br>
+                  <div class="campo_texto">
+                    <input type="text" id="nombre_producto" name="nombre_producto" required class="inp" data-tipo="nombre_producto">
+                    <label for="nombre_producto" class="lbl"><span class="text-nomb">Nombre del producto</span></label>
+                    <span class="inp-msg-error">Este campo es requerido</span>
+                  </div>
+                  <br>
+                  <div class="campo_texto">
+                    <input type="text" id="precio_producto" name="precio_producto" required class="inp" data-form="precio_producto">
+                    <label for="precio_producto" class="lbl"><span class="text-nomb">Precio del producto</span></label>
+                    <span class="inp-msg-error">Este campo es requerido</span>
+                  </div>
+                  <br>
+                  <div class="campo_texto">
+                    <textarea id="descripcion" name="descripcion" required class="inp_textarea" data-tipo="descripcion"></textarea>
+                    <label for="descripcion" class="lbl"><span class="text-nomb">Descripción del producto</span></label>
+                    <span class="inp-msg-error">Este campo es requerido</span>
+                  </div>
+                  <br>
+                  <input class="btn btn_principal" type="submit" value="Terminar edición">
+                  <button class="btn btn_principal" onclick="window.location.href=`../index.html`"> Cancelar </button>
+              </form>
+          </div>
+        </div>
+      </section>
+    
+
+    <section class="rodapie container">
+    </section>
+
+    <footer></footer>
+    <script src="../scripts/inserciones.js"></script>
+    <script type="module" src="../scripts/selectInputs.js"></script>
+    <script type="module" src="../controllers/editar_producto.js"></script>
+
+</div>
+</html>
