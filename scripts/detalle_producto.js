@@ -1,6 +1,6 @@
 import { productServices } from "../service/product-services.js";
 
-const obtenerInformacionProducto = async() => {
+export const obtenerInformacionProducto = async() => {
     const params = new URLSearchParams(window.location.search);
     const idProduct = params.get("id");
 
@@ -15,12 +15,11 @@ const obtenerInformacionProducto = async() => {
 }
 
 const crearDetalleProducto = (productoActual) => {
-    console.log(productoActual);
     const {url_img, categoria, nombre_producto, precio_producto, descripcion, id} = productoActual;
     const producto = document.createElement("div");
     producto.classList.add("detalle_producto_contenido");
     const contenido = /*html*/`
-        <img src="${url_img}" alt="imagen producto" class="detalle_producto_img">
+        <img src="${url_img}" alt="imagen producto" class="detalle_producto_img" id="${id}" data-product= "${categoria}">
         <div class="detalle_producto_texto">
             <h2 class="detalle_producto_titulo titulo">${nombre_producto}</h2>
             <h3 class="detalle_producto_precio">${precio_producto}</h3>

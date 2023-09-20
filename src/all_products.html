@@ -25,19 +25,19 @@
         </section>
     </div>
 
-    <script type="module">
-        import {crearCategoria} from "../controllers/category_controller.js"
-        let params = new URLSearchParams(window.location.search);
-        let idCat = params.get('id');
-        const categoriasContenedor = document.querySelector(".categorias_contenedor");
-        const nuevaCategoria = crearCategoria(idCat,idCat);
-        categoriasContenedor.appendChild(nuevaCategoria);
-    </script>
-
     <section class="rodapie container">
     </section>
 
     <footer></footer>
     <script src="../scripts/inserciones.js"></script>
+    <script type="module">
+      import {crearCategoria} from "../controllers/category_controller.js"
+      let params = new URLSearchParams(window.location.search);
+      let idCat = params.get('id');
+      const categoriasContenedor = document.querySelector(".categorias_contenedor");
+      const nuevaCategoria = crearCategoria(idCat,idCat);
+      categoriasContenedor.appendChild(nuevaCategoria);
+    </script>
+
   </body>
 </html>

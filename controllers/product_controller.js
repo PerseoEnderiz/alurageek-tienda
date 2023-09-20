@@ -33,24 +33,36 @@ export const crearProducto = (url_img, categoria, nombre_producto, precio_produc
     return producto;
   };
 
-export const agregarProductosACategoria = (categoriaProductos) => {
-productServices.listaProductos()
-    .then((data) => {
-        // Para cada producto, verifica si su categoría coincide con el id del elemento actual
-        data.forEach(({url_img, categoria, nombre_producto, precio_producto, descripcion, id}) => {
-            if (categoria === categoriaProductos.id) {
-                // Si coincide, crea el producto y agrégalo al elemento
-                const nuevoProducto = crearProducto(url_img, categoria, nombre_producto, precio_producto, descripcion, id);
-                categoriaProductos.appendChild(nuevoProducto);
+  export const agregarProductosACategoria = (categoriaProductos, maxProductos) => {
+    if(maxProductos == null){
+        maxProductos = 6;
+    }
+    let contadorProductos = 0;
+    productServices.listaProductos()
+        .then((data) => {
+            // Para cada producto, verifica si su categoría coincide con el id del elemento actual
+            data.forEach(({url_img, categoria, nombre_producto, precio_producto, descripcion, id}) => {
+                if (contadorProductos < maxProductos) {
+                    if (categoria === categoriaProductos.id) {
+                        // Si coincide, crea el producto y agrégalo al elemento
+                        const nuevoProducto = crearProducto(url_img, categoria, nombre_producto, precio_producto, descripcion, id);
+                        categoriaProductos.appendChild(nuevoProducto);
+                        contadorProductos++;
+                    }
+                    else if(categoriaProductos.id == "Todos"){
+                        const nuevoProducto = crearProducto(url_img, categoria, nombre_producto, precio_producto, descripcion, id);
+                        categoriaProductos.appendChild(nuevoProducto);
+                        contadorProductos++;
+                    }
+                }
+            });
+            if (contadorProductos < maxProductos) {
+                console.log(`Solo se agregaron ${contadorProductos} productos. No hay suficientes productos para llegar a ${maxProductos}.`);
             }
-            else if(categoriaProductos.id == "Todos"){
-                const nuevoProducto = crearProducto(url_img, categoria, nombre_producto, precio_producto, descripcion, id);
-                categoriaProductos.appendChild(nuevoProducto);
-            }
-        });
-    })
-    .catch((error) => {alert("Error al obtener lista de productos");});
+        })
+        .catch((error) => {alert("Error al obtener lista de productos");});
 };
+
 
 /* // Selecciona todos los elementos con la clase "categoria_productos"
 const categoriasProductos = document.querySelectorAll(".categoria_productos");

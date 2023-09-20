@@ -23,64 +23,7 @@
     
     </section>
 
-    <section class="categoria container">
-        <div class="categoria_contenido">
-          <div class="categoria_encabezado">
-              <h2 class="categoria_encabezado_titulo">Productos similares</h2>
-              <button class="btn_linea"> Ver todo <i class="fa-solid fa-arrow-right"></i></button>
-          </div>
-          <div class="categoria_productos">
-              <div class="tarjetaProducto">
-                  <div class="producto_img"></div>
-                  <div class="producto_texto">
-                      <h3 class="producto_titulo descripcion">Producto XYZ</h3>
-                      <h3 class="producto_precio">R$ 60,00</h3>
-                      <button class="producto_btn btn_linea">Ver producto</button>
-                  </div>
-              </div>
-              <div class="tarjetaProducto">
-                  <div class="producto_img"></div>
-                  <div class="producto_texto">
-                      <h3 class="producto_titulo descripcion">Producto XYZ</h3>
-                      <h3 class="producto_precio">R$ 60,00</h3>
-                      <button class="producto_btn btn_linea">Ver producto</button>
-                  </div>
-              </div>
-              <div class="tarjetaProducto">
-                  <div class="producto_img"></div>
-                  <div class="producto_texto">
-                      <h3 class="producto_titulo descripcion">Producto XYZ</h3>
-                      <h3 class="producto_precio">R$ 60,00</h3>
-                      <button class="producto_btn btn_linea">Ver producto</button>
-                  </div>
-              </div>
-              <div class="tarjetaProducto">
-                  <div class="producto_img"></div>
-                  <div class="producto_texto">
-                      <h3 class="producto_titulo descripcion">Producto XYZ</h3>
-                      <h3 class="producto_precio">R$ 60,00</h3>
-                      <button class="producto_btn btn_linea">Ver producto</button>
-                  </div>
-              </div>
-              <div class="tarjetaProducto">
-                  <div class="producto_img"></div>
-                  <div class="producto_texto">
-                      <h3 class="producto_titulo descripcion">Producto XYZ</h3>
-                      <h3 class="producto_precio">R$ 60,00</h3>
-                      <button class="producto_btn btn_linea">Ver producto</button>
-                  </div>
-              </div>
-              <div class="tarjetaProducto">
-                  <div class="producto_img"></div>
-                  <div class="producto_texto">
-                      <h3 class="producto_titulo descripcion">Producto XYZ</h3>
-                      <h3 class="producto_precio">R$ 60,00</h3>
-                      <button class="producto_btn btn_linea">Ver producto</button>
-                  </div>
-              </div>
-          </div >
-        </div>
-     </section>
+    <section class="categorias_contenedor"></section>
 
     <section class="rodapie container">
     </section>
@@ -88,5 +31,17 @@
     <footer></footer>
     <script src="../scripts/inserciones.js"></script>
     <script type="module" src="../scripts/detalle_producto.js"></script>
+    <script type="module">
+        import {crearCategoria} from "../controllers/category_controller.js"
+        import {obtenerInformacionProducto} from "../scripts/detalle_producto.js"
+
+        obtenerInformacionProducto().then(productoActual => {
+            const productosSimilares = document.querySelector(".categorias_contenedor");
+            
+            productosSimilares.appendChild(crearCategoria(productoActual.categoria, "Productos similares"));
+        });
+        
+        
+    </script>
   </body>
 </html>

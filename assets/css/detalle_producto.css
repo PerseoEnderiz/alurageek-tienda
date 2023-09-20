@@ -19,6 +19,18 @@
     text-align: justify;
 }
 
+@media screen and (min-width:600px){
+    .detalle_producto_contenido{
+        flex-direction: row;
+        width: 80%;
+        align-items: center;
+    }
+    .detalle_producto_img{
+        width: 31.625rem;
+        height: 25rem;
+    }
+
+}
 @media screen and (min-width:1024px){
     .detalle_producto_contenido{
         flex-direction: row;
