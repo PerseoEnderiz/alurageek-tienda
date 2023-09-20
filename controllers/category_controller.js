@@ -1,13 +1,13 @@
 import { productServices } from "../service/product-services.js";
 import { agregarProductosACategoria } from "./product_controller.js";
 
-export const crearCategoria = (idCat) => {
+export const crearCategoria = (idCat, nombreCat) => {
     const category = document.createElement("section");
     category.classList.add("categoria","container");
     const contenidoCategory = /*html*/`
         <div class="categoria_contenido">
             <div class="categoria_encabezado">
-                <h2 class="categoria_encabezado_titulo">${idCat}</h2>
+                <h2 class="categoria_encabezado_titulo">${nombreCat}</h2>
                 <button class="btn_linea" onclick="window.location.href='../src/all_products.html?id=${idCat}'"> Ver todo <i class="fa-solid fa-arrow-right"></i></button>
             </div>
             <div class="categoria_productos" id="${idCat}">
@@ -31,7 +31,7 @@ export const listaCategorias= () => {
             // Elimina las categorías duplicadas utilizando Set
             const categoriasUnicas = [...new Set(categorias)];
             categoriasUnicas.forEach((currentValue) => {
-                const nuevaCategoria = crearCategoria(currentValue);
+                const nuevaCategoria = crearCategoria(currentValue,currentValue);
                 categoriasContenedor.appendChild(nuevaCategoria);
             });
         })

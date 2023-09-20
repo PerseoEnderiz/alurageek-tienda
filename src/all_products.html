@@ -30,7 +30,7 @@
         let params = new URLSearchParams(window.location.search);
         let idCat = params.get('id');
         const categoriasContenedor = document.querySelector(".categorias_contenedor");
-        const nuevaCategoria = crearCategoria(idCat);
+        const nuevaCategoria = crearCategoria(idCat,idCat);
         categoriasContenedor.appendChild(nuevaCategoria);
     </script>
 
